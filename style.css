@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 .image-card {
@@ -34,6 +35,11 @@ body {
     transition: transform 0.3s, opacity 0.3s;
 }
 
+.image-card:hover .bottom-section {
+    transform: translateY(0px);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
 .image-card button {
     background-color: red;
     color: white;
@@ -47,5 +53,89 @@ body {
     top: 20px;
     left: 240px;
     transform: translateY(-150px);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.link {
+    position:absolute;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(211, 208, 208);
+    color: black;
+    margin-left: 20px;
+    font-size: 10px;
+    top:390px;
+    display: inline-block;
+}
+
+.link a {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display:inline-block;
+    width: 120px;
+    cursor: pointer;
+}
+
+.link i {
+    display:inline-block;
+    color: black;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    text-rendering: auto;
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
+}
+
+.upload-icon {
+    position:absolute;
+    color: black;
+    background-color: rgb(211, 208, 208);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    top: 390px;
+    left: 210px;
+    text-align: center;
+}
+
+.upload-icon i {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.more-icon {
+    position:absolute;
+    color: black;
+    background-color: rgb(211, 208, 208);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    top: 390px;
+    left: 270px;
+    text-align: center;
+}
+
+.more-icon i {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.bottom-section {
+    transform: translateY(100px);
     transition: transform 0.3s, opacity 0.3s;
 }
