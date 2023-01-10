@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .image-card {
     height: 461px;
@@ -24,4 +27,25 @@
     right: 0;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 0.463) 0%, rgba(0,0,0,0.5144651610644257) 47%, rgba(0,0,0,0.18393294817927175) 100%);
+}
+
+.image-card:hover button {
+    transform: translateY(0px);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.image-card button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    width: 85px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    top: 20px;
+    left: 240px;
+    transform: translateY(-150px);
+    transition: transform 0.3s, opacity 0.3s;
 }
